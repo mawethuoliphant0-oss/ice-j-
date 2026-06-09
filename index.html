@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICE J | Premium Streetwear</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:black;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+    color:#7dd3fc;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1523398002811-999ca8dec234');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:600px;
+}
+
+.btn{
+    margin-top:25px;
+    background:#7dd3fc;
+    color:black;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 15px;
+    color:#ccc;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+}
+
+.contact-form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+}
+
+.contact-form button{
+    width:100%;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ICE J 🧊</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>ICE J 🧊</h1>
+    <p>
+        Premium streetwear inspired by confidence, hustle, and style.
+        Wear the coldest brand in the game.
+    </p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section id="shop">
+    <h2 class="section-title">Featured Collection</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+            <h3>ICE J T-Shirt</h3>
+            <p>Classic premium cotton tee.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb">
+            <h3>ICE J Hoodie</h3>
+            <p>Heavyweight streetwear hoodie.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234">
+            <h3>ICE J Tracksuit</h3>
+            <p>Comfort meets luxury.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+            <h3>ICE J Sneakers</h3>
+            <p>Designed for everyday movement.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About ICE J</h2>
+
+    <div class="about">
+        <p>
+            ICE J is a modern streetwear brand built around creativity,
+            ambition, and individuality. Every collection is designed to
+            stand out while staying comfortable and authentic.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 ICE J 🧊. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.querySelector(".btn").addEventListener("click", () => {
+    document.getElementById("shop").scrollIntoView({
+        behavior:"smooth"
+    });
+});
+</script>
+
+</body>
+</html>
