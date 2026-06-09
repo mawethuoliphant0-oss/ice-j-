@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICE J | Cart</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1100px;
+    margin:50px auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cart{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+    padding:20px 0;
+}
+
+.item-info{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.item-image{
+    width:80px;
+    height:80px;
+    background:#e5e5e5;
+    border-radius:10px;
+}
+
+.price{
+    font-weight:bold;
+    color:#0099ff;
+}
+
+.remove-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.summary{
+    margin-top:30px;
+    text-align:right;
+}
+
+.summary h2{
+    margin-bottom:15px;
+}
+
+.checkout-btn{
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.checkout-btn:hover{
+    background:#0099ff;
+}
+
+.empty-cart{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ICE J 🧊</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart">
+
+        <div class="cart-item">
+            <div class="item-info">
+                <div class="item-image"></div>
+                <div>
+                    <h3>ICE J Glacier Hoodie</h3>
+                    <p>Quantity: 1</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="price">R899</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <div class="item-info">
+                <div class="item-image"></div>
+                <div>
+                    <h3>ICE J Frost Tracksuit</h3>
+                    <p>Quantity: 1</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="price">R1,499</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Total: R2,398</h2>
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 ICE J. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
