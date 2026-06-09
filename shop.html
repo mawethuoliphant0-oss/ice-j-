@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICE J | Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#000;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1523398002811-999ca8dec234');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:50px;
+}
+
+.product{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+}
+
+.product img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#0099ff;
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#000;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#0099ff;
+}
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ICE J 🧊</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>ICE J COLLECTION</h1>
+    <p>Premium Streetwear • Luxury Comfort • Built Different</p>
+</section>
+
+<section class="products">
+
+    <div class="product">
+        <img src="hoodie.jpg" alt="ICE J Hoodie">
+        <div class="product-info">
+            <h3>ICE J Glacier Hoodie</h3>
+            <p class="price">R899</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="tracksuit.jpg" alt="ICE J Tracksuit">
+        <div class="product-info">
+            <h3>ICE J Frost Tracksuit</h3>
+            <p class="price">R1,499</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="beanie.jpg" alt="ICE J Beanie">
+        <div class="product-info">
+            <h3>ICE J Ice Beanie</h3>
+            <p class="price">R299</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="tshirt.jpg" alt="ICE J T-Shirt">
+        <div class="product-info">
+            <h3>ICE J Signature Tee</h3>
+            <p class="price">R499</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ICE J. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
